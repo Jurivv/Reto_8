@@ -39,7 +39,8 @@ print(f"{x} elevado a la potencia {n} es {resultado}")
 ```
 
 8.Diseñar una función que permita calcular una aproximación de la función exponencial alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Maclaurin. Nota: use math para traer la función exponencial y mostrar la diferencia entre el valor real y la aproximación.
-[![image.png](https://i.postimg.cc/vZ6VM1Fx/image.png)](https://postimg.cc/xXnC31d9)
+
+[![image.png](https://i.postimg.cc/brc6HGX7/image.png)](https://postimg.cc/hzsbKtts)
 ```python
 import math
 
@@ -57,13 +58,17 @@ print(f"Valor real de e^{x}: {valor_real}")
 print(f"Diferencia: {abs(valor_real - aprox)}")
 ```
 9.Diseñar una función que permita calcular una aproximación de la función seno alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Maclaurin. Nota: use math para traer la función seno y mostrar la diferencia entre el valor real y la aproximación.
-[![image.png](https://i.postimg.cc/L5w80TsC/image.png)](https://postimg.cc/0KGvz7DD)
+
+[![image.png](https://i.postimg.cc/v8rXwZwm/image.png)](https://postimg.cc/MXG1yxTk)
+
 ```python
 
 ```
 
 10.Diseñar una función que permita calcular una aproximación de la función arcotangente alrededor de 0 para cualquier valor x en el rango [-1, 1], utilizando los primeros n términos de la serie de Maclaurin. Nota: use math para traer la función arctan y mostrar la diferencia entre el valor real y la aproximación.
+
 [![image.png](https://i.postimg.cc/DfBj4NWd/image.png)](https://postimg.cc/jCnQGZ4L)
+
 
 Disclaimer: Para las aproximaciones de series determine con que valor n se obtiene menos del 0.1% de error.
 
