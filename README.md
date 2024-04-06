@@ -1,27 +1,47 @@
 # Reto_8
 1.Imprimir un listado con los números del 1 al 100 cada uno con su respectivo cuadrado.
 ```python
-
+cuadrado:int=0
+for i in range(1,101):
+    cuadrado=i**2
+    print("El número es: " + str(i) + " y su cuadrdo es " + str(cuadrado))  
 ```
 
 2.Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000..
 ```python
-
+for i in range(1,1000):
+   if i % 2 !=0:
+     print("El número impar es: " + str(i) )  
+for i in range(2,1001):
+   if i % 2 ==0:
+     print("-El número par es: " + str(i) )  
 ```
 
 3.Imprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado
 ```python
-
+n=int(input("ingrese un numero"))
+for i in range(-n,-2): 
+   if i % 2 ==0:
+    print("El número es: " + str(-i) )  
 ```
 
 4.Imprimir los números de 1 hasta un número natural n dado, cada uno con su respectivo factorial
 ```python
-
+n=int(input("ingrese un numero"))
+factorial:int=1
+for i in range(1,n+1): 
+ factorial *= i
+ print("El factorial del numero  " + str(i) +  " es "   + str(factorial)) 
 ```
 
 5.Calcular el valor de 2 elevado a la potencia n usando ciclos for.
 ```python
-
+n = int(input("Ingrese numero de potencia para el numero 2: "))
+i:int=2
+potencia:int=0
+for i in range(1, n+1):
+ potencia=i**2
+ print("El resultado es " + str(potencia)) 
 ```
 
 6.Leer un número natural n, leer otro dato de tipo real x y calcular x^n usando ciclos for. Disclaimer: Trate de no utilizar el operador de potencia (**).
@@ -35,7 +55,11 @@ print(f"{x} elevado a la potencia {n} es {resultado}")
 ```
 7.Diseñe un programa que muestre las tablas de multiplicar del 1 al 9.
 ```python
-
+n= int(input("Ingrese la tabla de multiplicar que quiere saber: "))
+multiplicacion:int=0
+for i in range (1,11):
+ multiplicacion=i*n
+ print("Las tabla de " + str(n) + " es " + str(multiplicacion)) 
 ```
 
 8.Diseñar una función que permita calcular una aproximación de la función exponencial alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Maclaurin. Nota: use math para traer la función exponencial y mostrar la diferencia entre el valor real y la aproximación.
